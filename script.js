@@ -3,7 +3,6 @@ let url="https://api.openbrewerydb.org/breweries";
         try{
             const response=await fetch(url)
             const display=await response.json();
-            //var element;
             display.forEach(element=>{
                 const div=document.createElement('div');
                 let website='';
